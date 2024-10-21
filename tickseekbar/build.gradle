@@ -27,15 +27,15 @@ ext {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
 
@@ -49,7 +49,7 @@ android {
 }
 
 dependencies {
-    compileOnly 'com.android.support:appcompat-v7:27.1.1'
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
 }
 
 //apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
